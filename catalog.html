@@ -3,13 +3,15 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Девайс — Каталог</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 
 	<header class="header">
 		<div class="container">
-			<a href="index.html"><img class="header-logo" src="img/logo.svg" width="164" height="36" alt="Логотип"></a>
+			<a class="header-logo index-logo" href="index.html"><img src="img/logo.svg" width="164" height="36" alt="Логотип"></a>
 
 			<nav class="header-navigation">
 
@@ -68,13 +70,12 @@
 
 			<form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
 
-<!-- 				<div class="filter-form-field">
-					<legend class="filter-form-field-title">Стоимость</legend>
-
-					<input class="cost-indicator" type="range" name="cost-indicator">
-					<span class="cost-indicator-icon">от 0</span>
-					<span class="cost-indicator-icon">до 5000</span>
-				</div> -->
+				<div>
+					<div>
+						<span></span>
+						<span></span>
+					</div>
+				</div> <!-- доделать -->
 
 				<fieldset class="filter-form-field">
 
@@ -118,7 +119,7 @@
 
 					<div class="filter-form-field-radio">
 						<input class="visually-hidden" type="radio" name="bluetooth-option" value="no" id="no-option">
-						<label class="radio-icon" for="no-option">Нет</label> <!-- Почему-то не табается -->
+						<label class="radio-icon" for="no-option">Нет</label>
 					</div>
 				</fieldset>
 
@@ -137,7 +138,7 @@
 				<h2 class="sort-list-title">Сортировка:</h2>
 
 				<ul class="sort-list">
-					<li class="sort-list-item"><a class="sort-list-link sort-list-link-active">По цене</a></li>
+					<li class="sort-list-item"><a class="sort-list-link-active">По цене</a></li>
 					<li class="sort-list-item"><a class="sort-list-link" href="#">По типу</a></li>
 					<li class="sort-list-item"><a class="sort-list-link" href="#">По популярности</a></li>
 				</ul>
@@ -218,7 +219,7 @@
 
 				<h3 class="visually-hidden">Карта сайта</h3>
 
-				<a href="index.html"><img class="footer-logo" src="img/logo.svg" width="164" height="36" alt="Логотип" style="color: #ffc600"></a> <!-- почему не меняется цвет логотипа? -->
+				<a class="footer-logo index-logo" href="index.html"><img src="img/logo.svg" width="164" height="36" alt="Логотип"></a> <!-- поменять на svg -->
 				<nav>
 					<ul class="footer-user-navigation">
 						<li class="footer-user-navigation-login">
@@ -253,7 +254,7 @@
 
 				<h3 class="visually-hidden">Наши социальные сети:</h3>
 
-				<ul class="footer-social" style="background-color: #cccccc"> <!-- временные стили для видимости иконок -->
+				<ul class="footer-social">
 					<li class="footer-social-item"><a class="footer-social-link" href="#"><img src="img/fb.svg" width="32" height="32" alt="Подпишись на Facebook"></a></li>
 					<li class="footer-social-item"><a class="footer-social-link" href="#"><img src="img/instagram.svg" width="32" height="32" alt="Подпишись на Instagram"></a></li>
 					<li class="footer-social-item"><a class="footer-social-link" href="#"><img src="img/twitter.svg" width="32" height="32" alt="Подпишись на Twitter"></a></li>

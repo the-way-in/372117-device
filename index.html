@@ -3,13 +3,15 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Девайс</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 
 	<header class="header">
 		<div class="container">
-			<img class="header-logo" src="img/logo.svg" width="164" height="36" alt="Логотип">
+			<img class="header-logo index-logo" src="img/logo.svg" width="164" height="36" alt="Логотип">
 
 			<nav class="header-navigation">
 
@@ -79,7 +81,7 @@
 				</table>
 			</div>
 
-			<div class="slider-second">
+			<!-- <div class="slider-second">
 				<img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
 
 				<div class="slider-info">
@@ -119,12 +121,12 @@
 						<td class="slider-details-title-item">Радиус поражения</td>
 					</tr>
 				</table>
-			</div>
+			</div> -->
 
 			<div class="slider-navigation">
-				<button class="slider-navigation-btn slider-navigation-btn-active">1</button>
-				<button class="slider-navigation-btn">2</button>
-				<button class="slider-navigation-btn">3</button>
+				<button class="slider-navigation-btn slider-navigation-btn-active" type="button">1</button>
+				<button class="slider-navigation-btn" type="button">2</button>
+				<button class="slider-navigation-btn" type="button">3</button>
 			</div>
 
 		</section>
@@ -182,24 +184,24 @@
 
 			<h2 class="visually-hidden">Наши сервисы</h2>
 
-			<ul class="service-slider-list">
-				<li class="service-slider-list-delivery">Доставка</li>
-				<li class="service-slider-list-warranty">Гарантия</li>
-				<li class="service-slider-list-credit">Кредит</li>
-			</ul>
+			<div class="service-slider-navigation">
+				<button class="service-slider-navigation-delivery" type="button">Доставка</button>
+				<button class="service-slider-navigation-warranty" type="button">Гарантия</button>
+				<button class="service-slider-navigation-credit" type="button">Кредит</button>
+			</div>
 
 			<div class="service-slider-delivery">
-				<h3 class="service-slider-title">Доставка</h3>
+				<h3 class="service-slider-title page-title">Доставка</h3>
 				<p class="service-slider-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
 			</div>
 
 			<div class="service-slider-warranty">
-				<h3 class="service-slider-title">Гарантия</h3>
+				<h3 class="service-slider-title page-title">Гарантия</h3>
 				<p class="service-slider-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
 			</div>
 
 			<div class="service-slider-credit">
-				<h3 class="service-slider-title">Кредит</h3>
+				<h3 class="service-slider-title page-title">Кредит</h3>
 				<p class="service-slider-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
 			</div>
 		</section>
@@ -219,7 +221,7 @@
 		<div class="about-us-and-contacts">
 			<section class="about-us">
 
-				<h2 class="page-title">О нас</h2>
+				<h2 class="about-us-title page-title">О нас</h2>
 
 				<p class="about-us-description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
 				<p class="about-us-description">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
@@ -235,7 +237,7 @@
 
 			<section class="contacts">
 
-				<h2 class="page-title">Контакты</h2>
+				<h2 class="contacts-title page-title">Контакты</h2>
 
 				<p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 
@@ -254,7 +256,7 @@
 
 				<h3 class="visually-hidden">Меню пользователя</h3>
 
-				<img class="footer-logo" src="img/logo.svg" width="164" height="36" alt="Логотип" style="color: #ffc600"> <!-- почему не меняется цвет логотипа? -->
+				<img class="footer-logo index-logo" src="img/logo.svg" width="164" height="36" alt="Логотип" style="color: #ffc600"> <!-- поменять на svg -->
 				<nav>
 					<ul class="footer-user-navigation">
 						<li class="footer-user-navigation-login"><a class="footer-user-navigation-link" href="#">Войти</a></li>
@@ -286,7 +288,7 @@
 
 				<h3 class="visually-hidden">Наши социальные сети:</h3>
 
-				<ul class="footer-social" style="background-color: #cccccc"> <!-- временные стили для видимости иконок -->
+				<ul class="footer-social">
 					<li class="footer-social-item"><a class="footer-social-link" href="#"><img src="img/fb.svg" width="32" height="32" alt="Подпишись на Facebook"></a></li>
 					<li class="footer-social-item"><a class="footer-social-link" href="#"><img src="img/instagram.svg" width="32" height="32" alt="Подпишись на Instagram"></a></li>
 					<li class="footer-social-item"><a class="footer-social-link" href="#"><img src="img/twitter.svg" width="32" height="32" alt="Подпишись на Twitter"></a></li>

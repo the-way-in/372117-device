@@ -29,18 +29,18 @@
 
 				<ul class="header-menu">
 					<li class="header-menu-item">
-						<a class="header-menu-link" href="catalog.html">Каталог товаров</a>
+						<a class="header-menu-link" href="#">Каталог товаров</a>
 						<ul class="header-menu-sub-menu">
 
 							<li class="header-menu-sub-item">
-								<a class="header-menu-sub-link" href="catalog.html">Виртуальная реальность</a>
+								<a class="header-menu-sub-link" href="#">Виртуальная реальность</a>
 								<a class="header-menu-sub-link" href="catalog.html">Моноподы для селфи</a>
-								<a class="header-menu-sub-link" href="catalog.html">Экшн-камеры</a>
+								<a class="header-menu-sub-link" href="#">Экшн-камеры</a>
 							</li>
 
 							<li class="header-menu-sub-item">
-								<a class="header-menu-sub-link" href="catalog.html">Фитнес-браслеты</a>
-								<a class="header-menu-sub-link" href="catalog.html">Умные часы</a>
+								<a class="header-menu-sub-link" href="#">Фитнес-браслеты</a>
+								<a class="header-menu-sub-link" href="#">Умные часы</a>
 							</li>
 
 							<li class="header-menu-sub-item"><a class="header-menu-sub-link" href="catalog.html">Квадрокоптеры</a></li>
@@ -60,7 +60,6 @@
 	<main>
 
 		<h1 class="visually-hidden">Интернет-магазин гаджетов "Девайс"</h1>
-
 
 		<section class="slider container">
 			<h2 class="visually-hidden">Промо-слайдер</h2>
@@ -161,7 +160,7 @@
 			<ul class="popular-items-list">
 
 				<li class="popular-items-list-item">
-					<a class="popular-items-list-link" href="catalog.html">
+					<a class="popular-items-list-link" href="#">
 						<span class="popular-items-list-link-image"><img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность"></span>
 						<span class="popular-items-list-link-title">Виртуальная реальность</span>
 					</a>
@@ -175,28 +174,28 @@
 				</li>
 
 				<li class="popular-items-list-item">
-					<a class="popular-items-list-link" href="catalog.html">
+					<a class="popular-items-list-link" href="#">
 						<span class="popular-items-list-link-image"><img src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры"></span>
 						<span class="popular-items-list-link-title">Экшн-камеры</span>
 					</a>
 				</li>
 
 				<li class="popular-items-list-item">
-					<a class="popular-items-list-link" href="catalog.html">
+					<a class="popular-items-list-link" href="#">
 						<span class="popular-items-list-link-image"><img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты"></span>
 						<span class="popular-items-list-link-title">Фитнес-браслеты</span>
 					</a>
 				</li>
 
 				<li class="popular-items-list-item">
-					<a class="popular-items-list-link" href="catalog.html">
+					<a class="popular-items-list-link" href="#">
 						<span class="popular-items-list-link-image"><img src="img/popular-5.svg" width="56" height="98" alt="Умные часы"></span>
 						<span class="popular-items-list-link-title">Умные часы</span>
 					</a>
 				</li>
 
 				<li class="popular-items-list-item">
-					<a class="popular-items-list-link" href="catalog.html">
+					<a class="popular-items-list-link" href="#">
 						<span class="popular-items-list-link-image"><img src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптеры"></span>
 						<span class="popular-items-list-link-title">Квадрокоптеры</span>
 					</a>
@@ -287,12 +286,12 @@
 
 				<h3 class="visually-hidden">Меню пользователя</h3>
 
-				<img class="footer-logo index-logo" src="img/logo.svg" width="164" height="36" alt="Логотип" style="color: #ffc600"> <!-- поменять на svg -->
+				<a class="footer-logo index-logo" href="#"><svg class="footer-logo index-logo" xmlns="http://www.w3.org/2000/svg" width="164" height="36" alt="Логотип"><text transform="matrix(1.827 0 0 1.814 -2.319 34.511)" font-size="26.459" font-family="Gilroy" font-weight="800">DEVICE</text></svg></a>
 				<nav>
 					<ul class="footer-user-navigation">
-						<li class="footer-user-navigation-login"><a class="footer-user-navigation-link" href="#">Войти</a></li>
-						<li class="footer-user-navigation-comparison"><a class="footer-user-navigation-link" href="#">Сравнить</a></li>
-						<li class="footer-user-navigation-cart"><a class="footer-user-navigation-link" href="#">Корзина</a></li>
+						<li><a class="footer-user-navigation-link footer-user-navigation-login" href="#">Войти</a></li>
+						<li><a class="footer-user-navigation-link footer-user-navigation-comparison" href="#">Сравнить</a></li>
+						<li><a class="footer-user-navigation-link footer-user-navigation-cart" href="#">Корзина</a></li>
 					</ul>
 				</nav>
 			</section>
@@ -330,20 +329,19 @@
 		</div>
 	</footer>
 
-	<!-- <section class="modal modal-appointment">
+	<!-- 	<section class="modal modal-appointment">
 
 		<h2 class="visually-hidden">Напишите нам</h2>
 
 		<form class="modal-appointment-form" action="https://echo.htmlacademy.ru" method="post">
 
-			<label for="name">Ваше имя:</label>
-			<input id="name" type="text" name="name" placeholder="Имя Фамилия" required>
+			<label class="modal-appointment-form-name" for="name"><input id="name" type="text" name="name" placeholder="Имя Фамилия" required>Ваше имя:</label>
 
-			<label for="email">Ваш e-mail:</label>
-			<input id="email" type="email" name="email" placeholder="email@example.com" required>
 
-			<label for="message">Текст письма:</label>
-			<input id="message" type="text" name="message" placeholder="В свободной форме" required>
+			<label class="modal-appointment-form-email" for="email"><input id="email" type="email" name="email" placeholder="email@example.com" required>Ваш e-mail:</label>
+
+
+			<label class="modal-appointment-form-message" for="message"><textarea id="message" type="text" name="message" placeholder="В свободной форме" required>Текст письма:</textarea></label>
 
 			<button class="btn" type="submit" aria-label="Отправить сообщение">Отправить</button>
 
